@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<meta charset ="utf-8"/>
+		<title>Exemplo 12</title>
+		<style>
+			body{
+				font-family: Arial;
+			}
+		</style>
+		<script>
+		function cuboDoNumero(numero,exp){
+		var cubo = Math.pow(numero, exp);
+		return cubo;
+		}
+		function evento() {
+		var num_valor = document.getElementById("num").value;
+		var num_valor2 = document.getElementById("num2").value;
+		var resl = "O resultado da potência é: " + cuboDoNumero(num_valor, num_valor2);
+		document.getElementById("mensagem").innerHTML = resl;
+		}
+		</script>
+	</head>
+	<body>
+  <h1>Retornando valor de uma função</h1>
+  <table>
+	  <tr>
+		  <td width = "150"> Digite um número: </td>
+		  <td width = "30"> <input type ="text" id = "num" value = "" size = "3"/></td>
+	  </tr>
+	  <tr>
+	      <td width = "150"> Digite o expoente:</td>
+	      <td width = "30"> <input type ="text" id = "num2" value = "" size = "3"/></td>
+	  </tr>
+	  <tr>
+	  	<td width = "30" colspan = "2" align = "center" > <input type = "button" value = "Calcular" onclick = "evento()"/> </td>
+     </tr>
+     </table>
+     <br>
+     <p id = "mensagem"></p>
+	</body>
+</html>
