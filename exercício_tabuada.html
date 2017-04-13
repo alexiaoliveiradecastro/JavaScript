@@ -1,0 +1,26 @@
+<html>
+ <head>
+<title>Exercício Prático (Tabuada)</title> 
+  <meta charset="utf-8"/>
+<style>
+body{
+font-family: Arial;
+}
+</style>
+ </head>
+ <body>
+ <h1>Tabuada Multiplicação</h1>
+  <script>
+   for(i=1;i<=100;i++){
+   document.write('<table border="1">');
+    for(j=1;j<=10;j++){
+     var res=i*j;
+     document.write("<tr>");
+     document.write("<td>"+i+"*"+j+"="+res+"<br></td>");
+     document.write("</tr>");
+    }
+    document.write("</table><br><br>");
+   }
+   </script>
+ </body>
+ </html>
